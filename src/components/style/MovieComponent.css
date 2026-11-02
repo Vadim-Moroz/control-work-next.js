@@ -1,0 +1,5 @@
+.movie-details{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(92 138 64 / 0.83);
+}

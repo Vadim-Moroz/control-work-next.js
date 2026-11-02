@@ -1,0 +1,87 @@
+
+.movie {
+    display: grid;
+    grid-template-columns: 220px minmax(1fr, 1fr);
+    grid-template-areas:
+        "poster title"
+        "poster overview"
+        "poster popularity"
+        "poster genres";
+    gap: 16px 28px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 28px;
+    background-color: #1e1e2e;
+    color: #f1f1f5;
+    border: 1px solid #35354a;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.movie h2 {
+    grid-area: title;
+    margin: 0;
+    font-size: 30px;
+}
+
+.movie :nth-child(2) {
+    grid-area: poster;
+    width: 100%;
+}
+
+.movie p:not(.popularity) {
+    grid-area: overview;
+    margin: 0;
+    color: #c5c5d4;
+    font-size: 16px;
+}
+
+.movie .popularity{
+    grid-area: popularity;
+    align-self: start;
+    margin: 0;
+    color: #aaa5ff;
+    font-size: 14px;
+    font-weight: 600;
+}
+.movie div{
+    grid-area: genres;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    gap: 8px;
+}
+.back{
+    padding: 10px 24px;
+    min-width: 100px;
+    text-decoration: none;
+    background: #252538;
+    color: #f5f5ff;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.back:hover {
+    background: #5145cd;
+    border-color: #7569ff;
+    box-shadow: 0 4px 12px rgba(81, 69, 205, 0.3);
+    transform: translateY(-2px);
+}
+
+.back:active {
+    transform: translateY(0) scale(0.97);
+}
+
+.back:focus-visible {
+    outline: 2px solid #958cff;
+    outline-offset: 3px;
+}

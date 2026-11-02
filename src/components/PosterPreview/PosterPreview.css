@@ -1,0 +1,23 @@
+
+.posterPreview {
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.posterPreview img {
+    display: block;
+    width: 100%;
+    height: 700px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.posterPreview:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 28px rgba(100, 80, 255, 0.3);
+}
+.posterPreview:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.08);
+}

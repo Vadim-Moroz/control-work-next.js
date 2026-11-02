@@ -1,0 +1,10 @@
+.rating{
+    font-size: 25px;
+    gap: 3px;
+}
+.star {
+    color: #302f2f;
+}
+.star.active {
+    color: #ffc107;
+}

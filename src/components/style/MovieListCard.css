@@ -1,0 +1,27 @@
+.movie-card{
+    border: 1px solid #d82e2e;
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+    background-color: #877474;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.movie-card .popularity{
+    font-size: 26px;
+}
+.movie-card a{
+    border: 1px solid #d82e2e;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #e1cf4d;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+.movie-card a:hover {
+    background-color: #716c0f;
+}

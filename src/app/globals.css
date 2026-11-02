@@ -1,0 +1,44 @@
+.GG{
+    margin: 0;
+}
+.HomePage {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #73bc87;
+}
+
+.HomePage h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.HomePage p {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.homeButton {
+    padding: 12px 24px;
+    background-color: #245c39;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.homeButton:hover {
+    background-color: #174329;
+}
+.header{
+    background-color: #0d147e;
+    height: 100%;
+}
